@@ -5,3 +5,8 @@ class Dog():
 
     def bark(self):
         print(f'{self.name} says woof!')
+
+    def __str__(self):
+        return f'The dog named {self.name} is {self.age} years old.'
+
+print(Dog('Ruby', 4))
